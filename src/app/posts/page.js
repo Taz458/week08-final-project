@@ -26,8 +26,7 @@ export default async function PostsPage({ searchParams }) {
 
     const posts = res.rows;
 
-    // Firstly, res = the database table which contains the posts table and added comments for each post,
-    // based on comments.post_id = post.id to associate which comment belongs to which post.
+
     // Basically, it starts with the posts table, joins the comments on the row if comments.post_id = post.id,
     // and it makes an array of JSON objects for the comments.
 

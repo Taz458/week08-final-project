@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from "next/navigation";
 import { getPostWithComments, addComment, deletePost } from "../actions"; // Import server actions
+import "@/styles/postsPage.css"
 
 export default function PostPage({ params }) {
     const { id } = React.use(params); // Extract the ID from params

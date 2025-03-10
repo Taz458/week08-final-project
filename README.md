@@ -18,7 +18,7 @@ and inserting from the database, the functions were in my actions.js file, and I
 
 🎯 What requirements did you achieve?
 
-All user goals, and for the stretch goals I used some tailwind, I refined the CSS to make it lok professional as I could. 
+All user goals, and for the stretch goals I used some tailwind, I refined the CSS to make it lok professional as I could.  I also added a sort by newest posts first/oldest posts first.
 
 🎯 Were there any requirements or goals that you were unable to achieve?
 

@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Summary/Info:
 
-## Getting Started
+I am creating a photo sharing app like Instagram or facebook, where the user can sort the posts by newest first or oldest first,
+by using sql ORDER BY post_id, asc or desc. If I do asc, the oldest will display first, if I do desc, the newest will display first.
 
-First, run the development server:
+Each picture will have a title, caption and have comments, and an add comment and delete post button. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Challenges and how i overcame them:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-I had to create a seperate file called actions.js for all my 'use server' functions, because I kept getting mixed up with the client and server functions in the same file. So essentially most of my fetching
+and inserting from the database, the functions were in my actions.js file, and I imported them into my client ffunctions when I needed to do onClick / onSubmit etc.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-For CSS, I did a mix of tailwind (for the nav bar and some other minor things), and I created a styles folder in my src, so I could easily import a css file for each page.
 
-## Learn More
+-I had a lot of trouble with the SQL queries, probably because I didn't understand it enough. But I persisted and learned from previous code/demos and AI.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎯 What requirements did you achieve?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All user goals, and for the stretch goals I used some tailwind, I refined the CSS to make it lok professional as I could. 
 
-## Deploy on Vercel
+🎯 Were there any requirements or goals that you were unable to achieve?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Updating the comments/previous posts.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🎯 If so, what was it that you found difficult about these tasks?
+
+I just didn't have the time and energy, in retrospect I couldve used ALTER or UPDATE in sql, and had a button to update the comments based off its ID.
+
+
+I found this one quite challenging, especially getting used to not having an API or monorepo, but also using the client and server actions was confusing, but I learnt alot 
+from debugging and reading the docs.
+
